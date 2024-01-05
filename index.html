@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Electron Video App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- <input type="file" id="fileInput" accept="video/*" /> -->
+
+    <div id="container">
+      <video id="videoPlayer" muted autoplay >
+      </video>
+      <div id="controls">
+        <div id="timeline">
+          <div id="progress"></div>
+          <div id="line"></div>
+          <div id="dragger"></div>
+          <div id="thumb">
+            <img id="thumb-img" src="" >
+          </div>
+        </div>
+        <div class="buttons">
+<div class="time-management">
+<button id="playBtn">Play</button>
+<button id="pauseBtn">Pause</button>
+</div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

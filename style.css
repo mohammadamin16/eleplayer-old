@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+video {
+  width: 100%;
+}
+
+#container {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+#controls {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  height: 50px;
+  bottom: 0px;
+  transform: translateY(-100%);
+  padding: 16px;
+}
+#controls button {
+  background-color: #333;
+  border-radius: 16px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+#timeline {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 15px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#line {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
+
+#progress {
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1;
+  height: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#dragger {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  cursor: pointer;
+}
+
+#thumb {
+  display: none;
+  position: absolute;
+  transform: translateY(-100%) translateX(-50%);
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: white;
+}
+
+#thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background-color: black;
+}
+
+.buttons {
+  border: red 1px solid;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.time-management {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
